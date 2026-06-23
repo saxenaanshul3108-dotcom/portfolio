@@ -5,7 +5,7 @@ font-family:Arial,sans-serif;
 background:linear-gradient(135deg,#020617,#071a3a,#0f172a);
 color:#fff;
 }
-nav{display:flex;justify-content:space-between;align-items:center;padding:15px 20px;background:#121a33;position:sticky;top:0}
+nav{display:flex;justify-content:space-between;align-items:center;padding:15px 20px;background:rgba(18,26,51,0.85);position:sticky;top:0;backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,0.08)}
 .logo{font-size:22px;font-weight:bold}
 .menu-btn{display:none;font-size:28px;background:none;border:none;color:white}
 #menu{display:flex;gap:20px;list-style:none}
