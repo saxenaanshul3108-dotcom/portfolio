@@ -1,6 +1,10 @@
 
 *{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
-body{font-family:Arial,sans-serif;background:#0b1020;color:#fff}
+body{
+font-family:Arial,sans-serif;
+background:linear-gradient(135deg,#020617,#071a3a,#0f172a);
+color:#fff;
+}
 nav{display:flex;justify-content:space-between;align-items:center;padding:15px 20px;background:#121a33;position:sticky;top:0}
 .logo{font-size:22px;font-weight:bold}
 .menu-btn{display:none;font-size:28px;background:none;border:none;color:white}
