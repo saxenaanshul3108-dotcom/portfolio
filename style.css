@@ -37,7 +37,14 @@ transform:translateY(-3px);
 box-shadow:0 0 25px rgba(37,99,235,0.8);
 }
 section{padding:90px 10%}
-.card,.project{background:#172036;padding:20px;border-radius:12px;margin:10px 0}
+.card,.project{
+background:rgba(23,32,54,0.75);
+padding:20px;
+border-radius:12px;
+margin:10px 0;
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,0.08);
+}
 .card:hover,
 .project:hover{
     transform:translateY(-5px);
