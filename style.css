@@ -66,3 +66,12 @@ footer{
     margin-top:40px;
     font-size:14px;
 }
+.hero p,
+#about p{
+    line-height: 1.7;
+}
+
+#contact p{
+    line-height: 1.5;
+    margin: 10px 0;
+}
