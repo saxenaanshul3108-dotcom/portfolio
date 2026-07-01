@@ -506,6 +506,12 @@ height:90px;
 
 background:#d6d6d6;
 
+pointer-events:auto;
+
+cursor:pointer;
+
+transition:.3s ease;
+
 }
 .chain-ball{
 
