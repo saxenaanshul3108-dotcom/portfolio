@@ -273,84 +273,106 @@ margin:auto;
    INSTAGRAM STYLE LAMP
 ========================================== */
 
+/* ==========================================
+   INSTAGRAM STYLE LAMP
+========================================== */
+
 .lamp-area{
-
 position:absolute;
-
 top:0;
-
 left:50%;
-
 transform:translateX(-50%);
-
 width:220px;
-
 height:420px;
-
 z-index:1000;
-
 pointer-events:none;
-
 }
-
-/* Wire */
 
 .lamp-wire{
-
 position:absolute;
-
 left:50%;
-
 transform:translateX(-50%);
-
 width:4px;
-
 height:170px;
-
-background:linear-gradient(#f2f2f2,#999);
-
-z-index:1001;
-
+background:linear-gradient(#eee,#999);
 }
-
-/* Lamp Head */
 
 .lamp-head{
-
 position:absolute;
-
 top:170px;
-
 left:50%;
-
 transform:translateX(-50%);
-
 width:110px;
-
-height:48px;
-
-background:#1d1d1d;
-
-border-radius:60px 60px 18px 18px;
-
-box-shadow:
-
-0 12px 25px rgba(0,0,0,.55);
-
-z-index:1002;
-
+height:50px;
+background:#1f1f1f;
+border-radius:55px 55px 15px 15px;
+box-shadow:0 12px 25px rgba(0,0,0,.5);
 }
 
-/* Lamp Cap */
-
 .lamp-cap{
-
 position:absolute;
-
 top:-10px;
-
 left:50%;
-/* ==========================================
+transform:translateX(-50%);
+width:40px;
+height:12px;
+background:#555;
+border-radius:10px;
+}
+
+.lamp-bulb{
+position:absolute;
+bottom:-18px;
+left:50%;
+transform:translateX(-50%);
+width:22px;
+height:22px;
+border-radius:50%;
+background:#fff2b5;
+box-shadow:
+0 0 15px white,
+0 0 35px gold;
+}
+
+.light-cone{
+position:absolute;
+top:205px;
+left:50%;
+transform:translateX(-50%);
+width:450px;
+height:650px;
+clip-path:polygon(48% 0%,52% 0%,100% 100%,0% 100%);
+background:linear-gradient(
+to bottom,
+rgba(255,240,170,.45),
+rgba(255,240,170,.15),
+transparent
+);
+filter:blur(3px);
+opacity:1;
+}
+
+.lamp-chain{
+position:absolute;
+left:76%;
+top:220px;
+width:2px;
+height:90px;
+background:#ddd;
+cursor:pointer;
+pointer-events:auto;
+}
+
+.lamp-chain::after{
+content:"";
+position:absolute;
+bottom:-10px;
+left:-5px;
+width:12px;
+height:12px;
+background:white;
+border-radius:50%;
+} ==========================================
    HERO BUTTONS
 ========================================== */
 
