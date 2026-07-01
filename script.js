@@ -384,6 +384,21 @@ window.addEventListener("load", () => {
 
 });
 
+// Lamp pull-chain contact toggle
+const lampRig = document.getElementById('rig');
+const lampPanel = document.getElementById('panel');
+const lampToggleBtn = document.getElementById('lampToggle');
+const chainToggleBtn = document.getElementById('chainToggle');
+
+function toggleLamp(e){
+  e.stopPropagation();
+  lampRig.classList.toggle('on');
+  lampPanel.classList.toggle('on');
+}
+
+if (lampToggleBtn) lampToggleBtn.addEventListener('click', toggleLamp);
+if (chainToggleBtn) chainToggleBtn.addEventListener('click', toggleLamp);
+
 /*==========================================================
 END OF FILE
 ==========================================================*/
