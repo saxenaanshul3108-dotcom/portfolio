@@ -4,51 +4,99 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-<title>Anshul Saxena | Portfolio</title>
+<title>Anshul Saxena | Premium Portfolio V6</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta name="description"
+content="Official Portfolio of Anshul Saxena">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
 
 <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-<link rel="stylesheet" href="style.css">
+href="style.css">
 
 </head>
 
 <body>
 
-<div class="background-animation"></div>
+<div id="progressBar"></div>
+
+<div class="cursor"></div>
+
+<div class="cursor2"></div>
+
+<div class="aurora">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+<div class="noise"></div>
+
+<!-- Hanging Lamp -->
+
+<div class="lamp-area">
+
+<div class="wire"></div>
+
+<div class="lamp">
+
+<div class="lamp-top"></div>
+
+<div class="lamp-bottom"></div>
+
+</div>
+
+<div class="chain" id="chain">
+
+<div class="chain-ball"></div>
+
+</div>
+
+<div class="light-cone"></div>
+
+</div>
 
 <header>
 
 <nav>
 
 <div class="logo">
-AS
+Anshul
 </div>
 
-<div class="menu-btn" onclick="toggleMenu()">
-<i class="fa-solid fa-bars"></i>
-</div>
+<ul>
 
-<ul id="menu">
+<li>
+<a href="#home">Home</a>
+</li>
 
-<li><a href="#about">About</a></li>
+<li>
+<a href="#about">About</a>
+</li>
 
-<li><a href="#education">Education</a></li>
+<li>
+<a href="#skills">Skills</a>
+</li>
 
-<li><a href="#skills">Skills</a></li>
+<li>
+<a href="#projects">Projects</a>
+</li>
 
-<li><a href="#projects">Projects</a></li>
-
-<li><a href="#certificates">Certificates</a></li>
-
-<li><a href="#contact">Contact</a></li>
+<li>
+<a href="#contact">Contact</a>
+</li>
 
 </ul>
 
@@ -56,70 +104,58 @@ AS
 
 </header>
 
-<section class="hero">
+<section
+class="hero"
+id="home">
 
-<div class="lamp-area">
+<div class="glass hero-card">
 
-<div class="lamp-wire"></div>
+<div class="hero-image">
 
-<div class="lamp-head">
-
-<div class="lamp-cap"></div>
-
-<div class="lamp-bulb"></div>
-
-</div>
-
-<div class="light-cone"></div>
-
-<div class="pull-string"
-onclick="toggleLamp()">
-
-<div class="pull-ball"></div>
-
-</div>
+<img
+src="profile.jpeg"
+alt="Anshul Saxena">
 
 </div>
 
 <div class="hero-content">
 
-<img src="profile.jpeg"
-class="profile">
+<h3>Hello, I'm</h3>
 
 <h1>
-
-Anshul Saxena
-
+Anshul
+<span>Saxena</span>
 </h1>
 
-<h2 id="typing"></h2>
+<h2>
+
+<span id="typing"></span>
+
+</h2>
 
 <p>
 
-B.Tech Computer Science (AI & ML)
-
-Passionate about Artificial Intelligence,
-
-Frontend Development and Python.
-
-Building innovative projects while constantly
-
-learning modern technologies.
+Passionate B.Tech Computer Science Engineering
+(AI & ML) student focused on building modern
+web applications, AI-powered software and
+creative digital experiences.
 
 </p>
 
 <div class="hero-buttons">
 
-<a href="#projects"
+<a
+href="#projects"
 class="btn">
 
 View Projects
 
 </a>
 
-<a href="Resume.pdf"
+<a
+href="Resume.pdf"
 download
-class="btn2">
+class="btn secondary">
 
 Download Resume
 
@@ -129,32 +165,36 @@ Download Resume
 
 </div>
 
+</div>
+
 </section>
 
-<!-- ================= ABOUT ================= -->
+<section
+id="about"
+class="about">
 
-<section id="about">
+<div class="section-title">
 
 <h2>About Me</h2>
 
-<div class="glass-card">
+</div>
+
+<div class="glass about-card">
 
 <p>
 
-Hello! I'm <strong>Anshul Saxena</strong>, a first-year
-B.Tech Computer Science (Artificial Intelligence &
-Machine Learning) student.
+I'm Anshul Saxena, a B.Tech CSE (AI & ML)
+student passionate about Artificial Intelligence,
+Machine Learning, Front-End Development and
+creating premium digital experiences.
 
-I enjoy building modern web applications, AI
-projects and automation tools.
-
-I am continuously improving my skills in Python,
-Frontend Development, Artificial Intelligence,
-Machine Learning and Cybersecurity.
+I enjoy transforming ideas into beautiful,
+interactive websites while continuously learning
+new technologies.
 
 My goal is to become a highly skilled Software
-Engineer capable of building premium products
-that solve real-world problems.
+Engineer capable of building AI-powered
+applications that solve real-world problems.
 
 </p>
 
@@ -162,238 +202,210 @@ that solve real-world problems.
 
 </section>
 
+<section
+id="skills"
+class="skills">
 
-<!-- ================= EDUCATION ================= -->
-
-<section id="education">
-
-<h2>Education</h2>
-
-<div class="glass-card">
-
-<h3>B.Tech Computer Science (AI & ML)</h3>
-
-<p>
-
-2026 - Present
-
-<br><br>
-
-Currently pursuing Bachelor of Technology in
-Computer Science with specialization in
-Artificial Intelligence & Machine Learning.
-
-</p>
-
-</div>
-
-</section>
-
-
-<!-- ================= SKILLS ================= -->
-
-<section id="skills">
+<div class="section-title">
 
 <h2>Skills</h2>
 
+</div>
+
 <div class="skills-grid">
 
-<div class="skill-card">
-
-<i class="fa-brands fa-python"></i>
-
-<h3>Python</h3>
-
+<div class="glass skill">
+HTML5
 </div>
 
-<div class="skill-card">
-
-<i class="fa-brands fa-html5"></i>
-
-<h3>HTML5</h3>
-
+<div class="glass skill">
+CSS3
 </div>
 
-<div class="skill-card">
-
-<i class="fa-brands fa-css3-alt"></i>
-
-<h3>CSS3</h3>
-
+<div class="glass skill">
+JavaScript
 </div>
 
-<div class="skill-card">
-
-<i class="fa-brands fa-js"></i>
-
-<h3>JavaScript</h3>
-
+<div class="glass skill">
+Python
 </div>
 
-<div class="skill-card">
-
-<i class="fa-solid fa-brain"></i>
-
-<h3>Artificial Intelligence</h3>
-
+<div class="glass skill">
+AI
 </div>
 
-<div class="skill-card">
+<div class="glass skill">
+Machine Learning
+</div>
 
-<i class="fa-solid fa-shield-halved"></i>
+<div class="glass skill">
+GitHub
+</div>
 
-<h3>Cybersecurity</h3>
-
+<div class="glass skill">
+Responsive Design
 </div>
 
 </div>
 
 </section>
 
+<section id="projects" class="projects">
 
-<!-- ================= PROJECTS ================= -->
+    <div class="section-title">
+        <h2>Featured Projects</h2>
+        <p>Some of my best work</p>
+    </div>
 
-<section id="projects">
+    <div class="projects-grid">
 
-<h2>Projects</h2>
+        <article class="glass project-card reveal">
+            <div class="project-number">01</div>
 
-<div class="project-grid">
+            <h3>Snake Water Gun Game</h3>
 
-<div class="project-card">
+            <p>
+                A Python-based game inspired by Rock Paper Scissors with
+                interactive gameplay, random computer moves, score tracking
+                and clean console logic.
+            </p>
 
-<h3>Snake Water Gun Game</h3>
+            <div class="project-tags">
+                <span>Python</span>
+                <span>Game</span>
+                <span>Logic</span>
+            </div>
+        </article>
 
-<p>
+        <article class="glass project-card reveal">
+            <div class="project-number">02</div>
 
-A Python game based on the classic
-Snake-Water-Gun logic with random
-computer moves and score tracking.
+            <h3>Jarvis AI Assistant</h3>
 
-</p>
+            <p>
+                A personal desktop AI assistant capable of responding to voice
+                commands, opening applications, performing searches and
+                automating everyday tasks.
+            </p>
 
-</div>
+            <div class="project-tags">
+                <span>Python</span>
+                <span>AI</span>
+                <span>Automation</span>
+            </div>
+        </article>
 
-<div class="project-card">
+        <article class="glass project-card reveal">
+            <div class="project-number">03</div>
 
-<h3>Jarvis AI Assistant</h3>
+            <h3>Auto Reply AI Chatbot</h3>
 
-<p>
+            <p>
+                An intelligent chatbot capable of generating automated replies
+                using natural language processing concepts while maintaining
+                conversational flow.
+            </p>
 
-An intelligent desktop voice assistant
-capable of performing basic commands,
-opening applications and automating tasks.
+            <div class="project-tags">
+                <span>AI</span>
+                <span>Chatbot</span>
+                <span>JavaScript</span>
+            </div>
+        </article>
 
-</p>
-
-</div>
-
-<div class="project-card">
-
-<h3>Auto Reply AI Chatbot</h3>
-
-<p>
-
-An AI chatbot capable of generating
-automatic responses and handling
-basic conversations intelligently.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= CERTIFICATES ================= -->
-
-<section id="certificates">
-
-<h2>Certificates</h2>
-
-<div class="certificate-grid">
-
-<div class="certificate-card">
-<i class="fa-solid fa-certificate"></i>
-<h3>Python Programming</h3>
-<p>Programming Fundamentals & Problem Solving</p>
-</div>
-
-<div class="certificate-card">
-<i class="fa-solid fa-certificate"></i>
-<h3>Frontend Development</h3>
-<p>HTML, CSS & JavaScript</p>
-</div>
-
-<div class="certificate-card">
-<i class="fa-solid fa-certificate"></i>
-<h3>Cybersecurity</h3>
-<p>Networking & Security Fundamentals</p>
-</div>
-
-<div class="certificate-card">
-<i class="fa-solid fa-certificate"></i>
-<h3>Artificial Intelligence</h3>
-<p>Machine Learning & AI Basics</p>
-</div>
-
-</div>
+    </div>
 
 </section>
 
-<!-- ================= CONTACT ================= -->
+<section class="education" id="education">
 
-<section id="contact">
+    <div class="section-title">
+        <h2>Education</h2>
+    </div>
 
-<h2>Contact Me</h2>
+    <div class="glass education-card reveal">
 
-<div class="glass-card">
+        <div class="timeline">
 
-<p>
+            <div class="timeline-item">
+                <span class="year">Present</span>
 
-<i class="fa-solid fa-envelope"></i>
+                <h3>B.Tech CSE (AI & ML)</h3>
 
-Email :
-<a href="mailto:saxenaanshul3108@gmail.com">
-saxenaanshul3108@gmail.com
-</a>
+                <p>
+                    Pursuing Bachelor of Technology in Computer Science
+                    Engineering with specialization in Artificial Intelligence
+                    and Machine Learning.
+                </p>
 
-</p>
+            </div>
 
-<p>
+        </div>
 
-<i class="fa-brands fa-github"></i>
+    </div>
 
-GitHub :
-<a href="https://github.com/saxenaanshul3108-dotcom" target="_blank">
+</section>
 
-github.com/saxenaanshul3108-dotcom
+<section class="contact" id="contact">
 
-</a>
+    <div class="section-title">
+        <h2>Contact</h2>
+    </div>
 
-</p>
+    <div class="glass contact-card reveal">
 
-<p>
+        <h3>Let's Build Something Amazing</h3>
 
-<i class="fa-solid fa-globe"></i>
+        <p>
+            I enjoy learning new technologies and building modern web
+            applications. Feel free to explore my work and connect with me.
+        </p>
 
-Portfolio :
+        <div class="contact-buttons">
 
-<a href="https://saxenaanshul3108-dotcom.github.io/portfolio/" target="_blank">
+            <a
+                href="https://github.com/saxenaanshul3108-dotcom"
+                target="_blank"
+                class="btn">
 
-saxenaanshul3108-dotcom.github.io/portfolio
+                GitHub
 
-</a>
+            </a>
 
-</p>
+            <a
+                href="https://saxenaanshul3108-dotcom.github.io/portfolio/"
+                target="_blank"
+                class="btn secondary">
 
-</div>
+                Portfolio
+
+            </a>
+
+        </div>
+
+    </div>
 
 </section>
 
 <footer>
 
-© 2026 Anshul Saxena • All Rights Reserved
+    <div class="glass footer-card">
+
+        <h3>Anshul Saxena</h3>
+
+        <p>
+            B.Tech CSE (AI & ML)
+        </p>
+
+        <p>
+            Designed & Developed with HTML, CSS and JavaScript.
+        </p>
+
+        <p class="copyright">
+            © 2026 Anshul Saxena. All Rights Reserved.
+        </p>
+
+    </div>
 
 </footer>
 
@@ -401,3 +413,4 @@ saxenaanshul3108-dotcom.github.io/portfolio
 
 </body>
 </html>
+
