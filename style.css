@@ -1484,25 +1484,31 @@ padding:18px 6%;
 
 nav{
 
-flex-direction:column;
+display:flex;
 
-gap:18px;
+justify-content:space-between;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+gap:12px;
 
 }
 
 nav ul{
 
-gap:18px;
+display:flex;
 
-flex-wrap:wrap;
+gap:15px;
 
-justify-content:center;
+align-items:center;
 
 }
 
 .hero{
 
-padding-top:170px;
+padding-top:260px;
 
 }
 
