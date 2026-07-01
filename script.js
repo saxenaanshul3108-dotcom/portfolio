@@ -139,7 +139,7 @@ const chain = document.getElementById("chain");
 
 let lightOn = true;
 
-chain.addEventListener("click", () => {
+if(chain){chain.addEventListener("click", () => {
 
     lightOn = !lightOn;
 
@@ -158,7 +158,7 @@ chain.addEventListener("click", () => {
     );
 
 });
-
+}
 /*==========================================================
 SCROLL REVEAL
 ==========================================================*/
