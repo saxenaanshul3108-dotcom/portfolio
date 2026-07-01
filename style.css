@@ -1,7 +1,7 @@
 
 *{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
 body{
-font-family:Arial,sans-serif;
+font-family:Poppins,sans-serif;
 background:linear-gradient(135deg,#020617,#071a3a,#0f172a);
 color:#fff;
 }
@@ -34,6 +34,10 @@ border-radius:30px;
 font-weight:bold;
 transition:0.3s;
 box-shadow:0 0 15px rgba(37,99,235,0.4);
+font-family: 'Space Grotesk', sans-serif;
+font-size: 4rem;
+font-weight:700;
+letter-spacing:2px;
 }
 
 .btn:hover{
