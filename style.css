@@ -43,20 +43,19 @@ body{
 
     background:
     radial-gradient(circle at top,
-    #121d38,
-    #070b14 70%);
+    #1a1a1a 0%,
+    #090909 45%,
+    #030303 100%);
 
     color:var(--text);
 
-    font-family:
-    'Poppins',
-    sans-serif;
+    font-family:'Poppins',sans-serif;
 
     overflow-x:hidden;
 
     min-height:100vh;
 
-    cursor:none;
+    cursor:auto;
 
 }
 
