@@ -1,136 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <meta charset="UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Portfolio</title>
+<title>Anshul Saxena | Portfolio</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
+
 <body>
 
+<div class="background-animation"></div>
+
+<header>
+
 <nav>
-<div class="logo">ANSHUL SAXENA</div>
-<button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+<div class="logo">
+AS
+</div>
+
+<div class="menu-btn" onclick="toggleMenu()">
+<i class="fa-solid fa-bars"></i>
+</div>
+
 <ul id="menu">
+
+<li><a href="#home">Home</a></li>
+
 <li><a href="#about">About</a></li>
-<li><a href="#education">Education</a></li>
+
 <li><a href="#skills">Skills</a></li>
+
 <li><a href="#projects">Projects</a></li>
-<li><a
-href="#certificates">Certificates</a></li>
+
+<li><a href="#certificates">Certificates</a></li>
+
 <li><a href="#contact">Contact</a></li>
+
 </ul>
+
 </nav>
 
-<section class="hero">
-<div class="lamp-container">
+</header>
 
-<div class="wire"></div>
+<section id="home" class="hero">
 
-<div class="lamp">
+<div class="lamp-area">
 
-<div class="lamp-top"></div>
+<div class="lamp-wire"></div>
 
-<div class="lamp-light"></div>
+<div class="lamp-head">
+
+<div class="lamp-cap"></div>
+
+<div class="lamp-bulb"></div>
 
 </div>
 
-<div class="chain" onclick="toggleLamp()"></div>
+<div class="lamp-chain"
+onclick="toggleLamp()"></div>
+
+<div class="light-cone"></div>
 
 </div>
-<img src="profile.jpeg" class="profile" alt="Anshul Saxena">
-<h1>ANSHUL SAXENA</h1>
+
+<div class="hero-content">
+
+<div class="image-box">
+
+<img src="profile.jpeg"
+class="profile">
+
+</div>
+
+<h1>
+
+Anshul Saxena
+
+</h1>
+
 <h2 id="typing"></h2>
+
 <p>
-I am a B.Tech CSE student passionate about Python, Artificial Intelligence, Cybersecurity and Software Development. I enjoy building projects and continuously learning new technologies.
+
+B.Tech Computer Science (AI & ML)
+
+Passionate about Artificial Intelligence, Frontend Development and Python.
+
 </p>
-<a class="btn" href="#projects">View Projects</a>
-<a href="Resume.pdf" download class="btn">
-    Download Resume
+
+<div class="hero-buttons">
+
+<a href="#projects" class="btn">
+
+View Projects
+
 </a>
-</section>
 
-<section id="about"><h2>About Me</h2><p> 
- I am a first-year B.Tech CSE student passionate about
-    Python, AI, Cybersecurity, and Software Development.
-    I enjoy solving problems and building innovative projects.
-</p></section>
+<a href="Resume.pdf"
 
-<section id="education"><h2>Education</h2>
-<div class="card">Btech : Invertis University</div>
-<div class="card">Schooling : Sacred Hearts </div>
-</section>
+download
 
-<section id="skills"><h2>Skills</h2>
-<div class="grid">
-<div class="card">🐍 Python</div>
-<div class="card">🌐 SQL</div>
-<div class="card">🤖 AI</div>
-<div class="card">📊 Machine Learning</div>
+class="btn2">
+
+Download Resume
+
+</a>
+
 </div>
+
+</div>
+
+</section>
+<section id="about">
+
+<h2>About Me</h2>
+
+<div class="glass-card">
+
+<p>
+
+I am a first-year B.Tech Computer Science (AI & ML) student passionate about Artificial Intelligence, Frontend Development, Python and Cybersecurity. I enjoy building real-world projects, learning modern technologies and continuously improving my development skills.
+
+</p>
+
+</div>
+
 </section>
 
-<section id="projects"><h2>Projects</h2>
-<div class="project">Snake,water,Gun project</div>
-<div class="project">Jarvis </div>
-<div class="project">Real life AI chatbot</div>
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skills-grid">
+
+<div class="skill-card">
+
+<i class="fa-brands fa-python"></i>
+
+<h3>Python</h3>
+
+</div>
+
+<div class="skill-card">
+
+<i class="fa-brands fa-html5"></i>
+
+<h3>HTML5</h3>
+
+</div>
+
+<div class="skill-card">
+
+<i class="fa-brands fa-css3-alt"></i>
+
+<h3>CSS3</h3>
+
+</div>
+
+<div class="skill-card">
+
+<i class="fa-brands fa-js"></i>
+
+<h3>JavaScript</h3>
+
+</div>
+
+<div class="skill-card">
+
+<i class="fa-solid fa-brain"></i>
+
+<h3>Artificial Intelligence</h3>
+
+</div>
+
+<div class="skill-card">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<h3>Cybersecurity</h3>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="project-grid">
+
+<div class="project-card">
+
+<h3>Snake, Water & Gun Game</h3>
+
+<p>
+
+A Python-based game implementing random logic and user interaction.
+
+</p>
+
+</div>
+
+<div class="project-card">
+
+<h3>Jarvis</h3>
+
+<p>
+
+A desktop AI assistant capable of automating tasks and responding to voice commands.
+
+</p>
+
+</div>
+
+<div class="project-card">
+
+<h3>Auto Reply AI Chatbot</h3>
+
+<p>
+
+An intelligent chatbot that generates automatic responses using AI techniques.
+
+</p>
+
+</div>
+
+</div>
+
 </section>
 
 <section id="certificates">
+
 <h2>Certificates</h2>
 
-<div class="card">
-    <h3>Microsoft Python Development</h3>
-    <a href="Microsoft_Python_Certificate.pdf" target="_blank" class="btn">
-        View Certificate
-    </a>
+<div class="certificate-grid">
+
+<div class="certificate-card">
+
+<h3>Microsoft Python Development</h3>
+
 </div>
 
-<div class="card">
-    <h3>Artificial Intelligence Course</h3>
-    <a href="AI_Certificate.pdf" target="_blank" class="btn">
-        View Certificate
-    </a>
+<div class="certificate-card">
+
+<h3>Artificial Intelligence</h3>
+
+</div>
+
+<div class="certificate-card">
+
+<h3>Frontend Development</h3>
+
+</div>
+
+<div class="certificate-card">
+
+<h3>Cybersecurity</h3>
+
+</div>
+
 </div>
 
 </section>
-
-
 
 <section id="contact">
+
 <h2>Contact</h2>
 
-<p>📞 +91 9258064934</p>
+<div class="glass-card">
 
-<p>📧 saxenaanshul3108@gmail.com</p>
+<p>
 
-<p>💻 GitHub: <a href="https://github.com/saxenaanshul3108-dotcom" target="_blank" class="btn">GitHub</a></p>
+<i class="fa-solid fa-envelope"></i>
 
+your@email.com
 
+</p>
+
+<p>
+
+<i class="fa-brands fa-github"></i>
+
+<a href="https://github.com/saxenaanshul3108-dotcom"
+
+target="_blank">
+
+GitHub Profile
+
+</a>
+
+</p>
+
+<p>
+
+<i class="fa-solid fa-globe"></i>
+
+<a href="https://saxenaanshul3108-dotcom.github.io/portfolio/"
+
+target="_blank">
+
+Portfolio Website
+
+</a>
+
+</p>
+
+</div>
 
 </section>
 
-
 <footer>
-    © 2026 Anshul Saxena | All Rights Reserved
+
+<p>
+
+© 2026 Anshul Saxena • Built with HTML, CSS & JavaScript
+
+</p>
+
 </footer>
+
 <script src="script.js"></script>
-<a href="Resume.pdf" download class="btn">
-    Download Resume
-</a>
+
 </body>
+
 </html>
