@@ -226,14 +226,14 @@ transform:translate(-120px,-100px);
 /* ===== Lamp ===== */
 
 .lamp-container{
-position:absolute;
-top:0;
-left:50%;
-transform:translateX(-50%);
-display:flex;
-flex-direction:column;
-align-items:center;
-z-index:50;
+    position:absolute;
+    top:0;
+    left:50%;
+    transform:translateX(-50%);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    z-index:2;
 }
 
 .wire{
