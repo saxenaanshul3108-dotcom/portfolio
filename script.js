@@ -1,130 +1,226 @@
-/* ==========================================
-   PORTFOLIO V5
-========================================== */
+/*==========================================================
+PORTFOLIO V6
+Author : Anshul Saxena
+==========================================================*/
 
-/* ===========================
-   Typing Animation
-=========================== */
+//=============================
+// Typing Animation
+//=============================
+
+const typingElement = document.getElementById("typing");
 
 const words = [
-    "B.Tech CSE (AI & ML) Student",
-    "Python Developer",
+    "B.Tech CSE (AI & ML)",
     "Frontend Developer",
+    "Python Programmer",
     "AI Enthusiast",
-    "Cybersecurity Learner"
+    "Web Designer"
 ];
 
 let wordIndex = 0;
 let charIndex = 0;
 let deleting = false;
 
-const typing = document.getElementById("typing");
-
-function typeEffect() {
+function typingEffect() {
 
     const currentWord = words[wordIndex];
 
     if (!deleting) {
 
-        typing.textContent = currentWord.substring(0, charIndex++);
+        typingElement.textContent =
+            currentWord.substring(0, charIndex + 1);
 
-        if (charIndex > currentWord.length) {
+        charIndex++;
+
+        if (charIndex === currentWord.length) {
+
             deleting = true;
 
-            setTimeout(typeEffect, 1500);
+            setTimeout(typingEffect, 1500);
 
             return;
         }
 
     } else {
 
-        typing.textContent = currentWord.substring(0, charIndex--);
+        typingElement.textContent =
+            currentWord.substring(0, charIndex - 1);
 
-        if (charIndex < 0) {
+        charIndex--;
+
+        if (charIndex === 0) {
 
             deleting = false;
 
             wordIndex++;
 
             if (wordIndex >= words.length) {
-
                 wordIndex = 0;
-
             }
 
         }
 
     }
 
-    setTimeout(typeEffect, deleting ? 40 : 90);
+    setTimeout(
+        typingEffect,
+        deleting ? 50 : 100
+    );
 
 }
 
-typeEffect();
+typingEffect();
 
 
-/* ===========================
-   Mobile Menu
-=========================== */
+//=============================
+// Scroll Progress Bar
+//=============================
 
-function toggleMenu(){
+const progressBar =
+document.getElementById("progressBar");
 
-document.getElementById("menu").classList.toggle("active");
+window.addEventListener("scroll", () => {
+
+    const scrollTop =
+        document.documentElement.scrollTop;
+
+    const height =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+
+    const progress =
+        (scrollTop / height) * 100;
+
+    progressBar.style.width =
+        progress + "%";
+
+});
+
+
+//=============================
+// Custom Cursor
+//=============================
+
+const cursor =
+document.querySelector(".cursor");
+
+const cursor2 =
+document.querySelector(".cursor2");
+
+document.addEventListener("mousemove", e => {
+
+    cursor.style.left =
+        e.clientX + "px";
+
+    cursor.style.top =
+        e.clientY + "px";
+
+    cursor2.style.left =
+        e.clientX + "px";
+
+    cursor2.style.top =
+        e.clientY + "px";
+
+});
+
+
+//=============================
+// Cursor Grow
+//=============================
+
+const hoverItems =
+document.querySelectorAll(
+"a,.btn,.skill,.project-card,.chain"
+);
+
+hoverItems.forEach(item => {
+
+    item.addEventListener("mouseenter", () => {
+
+        cursor2.style.width = "70px";
+        cursor2.style.height = "70px";
+
+    });
+
+    item.addEventListener("mouseleave", () => {
+
+        cursor2.style.width = "42px";
+        cursor2.style.height = "42px";
+
+    });
+
+});
+
+/*==========================================================
+HANGING LAMP
+==========================================================*/
+
+const chain = document.getElementById("chain");
+
+let lightOn = true;
+
+chain.addEventListener("click", () => {
+
+    lightOn = !lightOn;
+
+    document.body.classList.toggle("light-off");
+
+    chain.animate(
+        [
+            { transform: "translateY(0px)" },
+            { transform: "translateY(25px)" },
+            { transform: "translateY(0px)" }
+        ],
+        {
+            duration: 300,
+            easing: "ease-out"
+        }
+    );
+
+});
+
+/*==========================================================
+SCROLL REVEAL
+==========================================================*/
+
+const reveals = document.querySelectorAll(".reveal");
+
+function revealElements() {
+
+    const trigger =
+        window.innerHeight * 0.85;
+
+    reveals.forEach(item => {
+
+        const top =
+            item.getBoundingClientRect().top;
+
+        if (top < trigger) {
+
+            item.classList.add("active");
+
+        }
+
+    });
 
 }
 
-/* ==========================================
-   LAMP ON / OFF
-========================================== */
+window.addEventListener(
+    "scroll",
+    revealElements
+);
 
-let lampOn = true;
+revealElements();
 
-function toggleLamp() {
+/*==========================================================
+ACTIVE NAVIGATION
+==========================================================*/
 
-    const cone = document.querySelector(".light-cone");
-    const bulb = document.querySelector(".lamp-bulb");
-    const string = document.querySelector(".pull-string");
+const sections =
+document.querySelectorAll("section");
 
-    if (!cone || !bulb || !string) return;
-
-    string.style.transform = "translateY(12px)";
-
-    setTimeout(() => {
-        string.style.transform = "translateY(0)";
-    }, 180);
-
-    lampOn = !lampOn;
-
-    if (lampOn) {
-
-        cone.style.opacity = "0.95";
-
-        bulb.style.background = "#fff4b8";
-
-        bulb.style.boxShadow = `
-        0 0 15px white,
-        0 0 30px #ffd95c,
-        0 0 70px rgba(255,210,80,.9)
-        `;
-
-    } else {
-
-        cone.style.opacity = "0";
-
-        bulb.style.background = "#777";
-
-        bulb.style.boxShadow = "none";
-
-    }
-
-}
-
-/* ==========================================
-   SMOOTH ACTIVE NAV LINK
-========================================== */
-
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll("#menu a");
+const navLinks =
+document.querySelectorAll("nav a");
 
 window.addEventListener("scroll", () => {
 
@@ -132,11 +228,17 @@ window.addEventListener("scroll", () => {
 
     sections.forEach(section => {
 
-        const top = section.offsetTop - 120;
-        const height = section.offsetHeight;
+        const top =
+            section.offsetTop - 150;
 
-        if (pageYOffset >= top) {
-            current = section.getAttribute("id");
+        const height =
+            section.offsetHeight;
+
+        if (
+            window.scrollY >= top &&
+            window.scrollY < top + height
+        ) {
+            current = section.id;
         }
 
     });
@@ -145,7 +247,10 @@ window.addEventListener("scroll", () => {
 
         link.classList.remove("active");
 
-        if (link.getAttribute("href") === "#" + current) {
+        if (
+            link.getAttribute("href") ===
+            "#" + current
+        ) {
             link.classList.add("active");
         }
 
@@ -153,112 +258,152 @@ window.addEventListener("scroll", () => {
 
 });
 
-/* ==========================================
-   SCROLL TO TOP ON RELOAD
-========================================== */
+/*==========================================================
+SMOOTH SCROLL (Fallback)
+==========================================================*/
 
-window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
-};
+navLinks.forEach(link => {
 
-/* ==========================================
-   SCROLL REVEAL
-========================================== */
+    link.addEventListener("click", e => {
 
-const revealElements = document.querySelectorAll(
-".glass-card, .skill-card, .project-card, .certificate-card"
-);
+        e.preventDefault();
 
-function revealOnScroll(){
+        const target =
+            document.querySelector(
+                link.getAttribute("href")
+            );
 
-const trigger = window.innerHeight * 0.85;
+        target.scrollIntoView({
 
-revealElements.forEach(el=>{
+            behavior: "smooth"
 
-const top = el.getBoundingClientRect().top;
+        });
 
-if(top < trigger){
+    });
 
-el.style.opacity="1";
-el.style.transform="translateY(0)";
-el.style.transition="all .8s ease";
+});
+
+/*==========================================================
+PARALLAX HERO
+==========================================================*/
+
+const heroImage =
+document.querySelector(".hero-image img");
+
+window.addEventListener("mousemove", e => {
+
+    const x =
+        (window.innerWidth / 2 - e.clientX) / 45;
+
+    const y =
+        (window.innerHeight / 2 - e.clientY) / 45;
+
+    heroImage.style.transform =
+        `translate(${x}px, ${y}px)`;
+
+});
+
+/*==========================================================
+SKILL CARD GLOW
+==========================================================*/
+
+document
+.querySelectorAll(".skill")
+.forEach(skill => {
+
+    skill.addEventListener("mousemove", e => {
+
+        const rect =
+            skill.getBoundingClientRect();
+
+        const x =
+            e.clientX - rect.left;
+
+        const y =
+            e.clientY - rect.top;
+
+        skill.style.background =
+        `radial-gradient(circle at ${x}px ${y}px,
+        rgba(102,217,255,.20),
+        rgba(255,255,255,.06))`;
+
+    });
+
+    skill.addEventListener("mouseleave", () => {
+
+        skill.style.background =
+        "rgba(255,255,255,.08)";
+
+    });
+
+});
+
+/*==========================================================
+PROJECT CARD TILT
+==========================================================*/
+
+document
+.querySelectorAll(".project-card")
+.forEach(card => {
+
+    card.addEventListener("mousemove", e => {
+
+        const rect =
+            card.getBoundingClientRect();
+
+        const x =
+            e.clientX - rect.left;
+
+        const y =
+            e.clientY - rect.top;
+
+        const rotateY =
+            ((x / rect.width) - 0.5) * 10;
+
+        const rotateX =
+            ((rect.height / 2 - y) / rect.height) * 10;
+
+        card.style.transform =
+        `perspective(900px)
+        rotateX(${rotateX}deg)
+        rotateY(${rotateY}deg)
+        translateY(-8px)`;
+
+    });
+
+    card.addEventListener("mouseleave", () => {
+
+        card.style.transform =
+        "perspective(900px) rotateX(0) rotateY(0)";
+
+    });
+
+});
+
+/*==========================================================
+CURRENT YEAR
+==========================================================*/
+
+const yearElement =
+document.querySelector(".copyright");
+
+if (yearElement) {
+
+    yearElement.innerHTML =
+        `© ${new Date().getFullYear()} Anshul Saxena. All Rights Reserved.`;
 
 }
 
-});
+/*==========================================================
+PAGE LOADER
+==========================================================*/
 
-}
+window.addEventListener("load", () => {
 
-window.addEventListener("scroll",revealOnScroll);
-
-revealOnScroll();
-
-
-/* ==========================================
-   PROFILE PARALLAX
-========================================== */
-
-const profile = document.querySelector(".profile");
-
-document.addEventListener("mousemove",(e)=>{
-
-if(!profile) return;
-
-const x=(window.innerWidth/2-e.clientX)/40;
-
-const y=(window.innerHeight/2-e.clientY)/40;
-
-profile.style.transform=
-`translate(${-x}px,${-y}px)`;
+    document.body.classList.add("loaded");
 
 });
 
-
-/* ==========================================
-   BUTTON RIPPLE EFFECT
-========================================== */
-
-document.querySelectorAll(".btn,.btn2").forEach(button=>{
-
-button.addEventListener("mouseenter",()=>{
-
-button.style.transition=".35s";
-
-});
-
-});
-
-
-/* ==========================================
-   NAVBAR SHADOW
-========================================== */
-
-window.addEventListener("scroll",()=>{
-
-const nav=document.querySelector("nav");
-
-if(window.scrollY>30){
-
-nav.style.boxShadow="0 10px 30px rgba(0,0,0,.25)";
-
-}else{
-
-nav.style.boxShadow="none";
-
-}
-
-});
-
-
-/* ==========================================
-   PRELOADER (Optional)
-========================================== */
-
-window.addEventListener("load",()=>{
-
-document.body.style.opacity="1";
-
-});
-
-
-console.log("Portfolio Loaded Successfully");
+/*==========================================================
+END OF FILE
+==========================================================*/
