@@ -498,20 +498,15 @@ top:150px;
 
 left:50%;
 
-margin-left:60px;
+transform:translateX(58px);
 
 width:2px;
 
-height:80px;
+height:90px;
 
-background:#bdbdbd;
-
-pointer-events:auto;
-
-cursor:pointer;
+background:#d6d6d6;
 
 }
-
 .chain-ball{
 
 position:absolute;
@@ -545,9 +540,9 @@ left:50%;
 
 transform:translateX(-50%);
 
-width:420px;
+width:360px;
 
-height:650px;
+height:600px;
 
 background:
 conic-gradient(
@@ -564,9 +559,9 @@ polygon(
 0% 100%
 );
 
-filter:blur(10px);
+filter:blur(8px);
 
-opacity:1;
+opacity:.85;
 
 transition:.6s ease;
 
