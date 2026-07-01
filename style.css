@@ -229,31 +229,29 @@ transform:translate(-120px,-100px);
 
 .lamp-container{
     position:absolute;
-    top:-60px;
-    left:42%;
+    top:0;
+    left:50%;
     transform:translateX(-50%);
     display:flex;
     flex-direction:column;
     align-items:center;
     z-index:100;
 }
-
 .wire{
-width:4px;
-height:120px;
-background:#888;
+    width:4px;
+    height:170px;
+    background:#cfcfcf;
 }
-
 .lamp{
-position:relative;
-width:90px;
-height:55px;
-background:#222;
-border-radius:50px 50px 15px 15px;
-box-shadow:0 5px 20px rgba(0,0,0,.5);
-overflow:visible;
+    position:relative;
+    width:90px;
+    height:55px;
+    background:#555;
+    border-radius:50px 50px 15px 15px;
+    border:2px solid #888;
+    box-shadow:0 5px 20px rgba(0,0,0,.5);
+    overflow:visible;
 }
-
 .lamp-top{
 position:absolute;
 top:-12px;
@@ -261,7 +259,7 @@ left:50%;
 transform:translateX(-50%);
 width:30px;
 height:14px;
-background:#444;
+background:#777;
 border-radius:10px;
 }
 
