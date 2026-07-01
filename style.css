@@ -228,7 +228,7 @@ transform:translate(-120px,-100px);
 .lamp-container{
     position:absolute;
     top:-120px;
-    left:50%;
+    left:42%;
     transform:translateX(-50%);
     display:flex;
     flex-direction:column;
