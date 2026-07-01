@@ -227,7 +227,7 @@ transform:translate(-120px,-100px);
 
 .lamp-container{
     position:absolute;
-    top:0;
+    top:-120px;
     left:50%;
     transform:translateX(-50%);
     display:flex;
@@ -298,4 +298,7 @@ width:14px;
 height:14px;
 border-radius:50%;
 background:#ddd;
+}
+.hero{
+    padding-top: 120px;
 }
