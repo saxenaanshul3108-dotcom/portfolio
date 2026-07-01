@@ -229,7 +229,7 @@ transform:translate(-120px,-100px);
 
 .lamp-container{
     position:absolute;
-    top:0;
+    top:-30px;
     left:50%;
     transform:translateX(-50%);
     display:flex;
@@ -239,7 +239,7 @@ transform:translate(-120px,-100px);
 }
 .wire{
     width:4px;
-    height:170px;
+    height:110px;
     background:#cfcfcf;
 }
 .lamp{
