@@ -101,27 +101,7 @@ window.addEventListener("scroll", () => {
 // Custom Cursor
 //=============================
 
-const cursor =
-document.querySelector(".cursor");
 
-const cursor2 =
-document.querySelector(".cursor2");
-
-document.addEventListener("mousemove", e => {
-
-    cursor.style.left =
-        e.clientX + "px";
-
-    cursor.style.top =
-        e.clientY + "px";
-
-    cursor2.style.left =
-        e.clientX + "px";
-
-    cursor2.style.top =
-        e.clientY + "px";
-
-});
 
 
 //=============================
