@@ -245,28 +245,6 @@ var(--primary);
 CURSOR
 =========================*/
 
-.cursor{
-
-position:fixed;
-
-width:12px;
-
-height:12px;
-
-border-radius:50%;
-
-background:white;
-
-pointer-events:none;
-
-transform:
-translate(-50%,-50%);
-
-z-index:99999;
-
-transition:
-transform .08s;
-
 }
 
 .cursor2{
