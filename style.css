@@ -269,5 +269,86 @@ max-width:650px;
 margin:auto;
 
 }
+/* ==========================================
+   INSTAGRAM STYLE LAMP
+========================================== */
+
+.lamp-area{
+
+position:absolute;
+
+top:0;
+
+left:50%;
+
+transform:translateX(-50%);
+
+width:220px;
+
+height:420px;
+
+z-index:1000;
+
+pointer-events:none;
+
+}
+
+/* Wire */
+
+.lamp-wire{
+
+position:absolute;
+
+left:50%;
+
+transform:translateX(-50%);
+
+width:4px;
+
+height:170px;
+
+background:linear-gradient(#f2f2f2,#999);
+
+z-index:1001;
+
+}
+
+/* Lamp Head */
+
+.lamp-head{
+
+position:absolute;
+
+top:170px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+width:110px;
+
+height:48px;
+
+background:#1d1d1d;
+
+border-radius:60px 60px 18px 18px;
+
+box-shadow:
+
+0 12px 25px rgba(0,0,0,.55);
+
+z-index:1002;
+
+}
+
+/* Lamp Cap */
+
+.lamp-cap{
+
+position:absolute;
+
+top:-10px;
+
+left:50%;
 
 
