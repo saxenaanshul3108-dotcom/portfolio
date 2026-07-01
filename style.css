@@ -350,5 +350,353 @@ position:absolute;
 top:-10px;
 
 left:50%;
+/* ==========================================
+   HERO BUTTONS
+========================================== */
+
+.hero-buttons{
+
+margin-top:35px;
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.btn,
+.btn2{
+
+padding:16px 36px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-weight:600;
+
+font-size:16px;
+
+transition:.35s;
+
+}
+
+.btn{
+
+background:linear-gradient(135deg,#2d8cff,#60b8ff);
+
+color:white;
+
+box-shadow:0 12px 35px rgba(60,150,255,.35);
+
+}
+
+.btn:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 18px 45px rgba(60,150,255,.55);
+
+}
+
+.btn2{
+
+border:2px solid #60b8ff;
+
+color:white;
+
+background:transparent;
+
+}
+
+.btn2:hover{
+
+background:#60b8ff;
+
+color:#08111f;
+
+transform:translateY(-6px);
+
+}
+
+/* ==========================================
+   SECTIONS
+========================================== */
+
+section{
+
+padding:90px 10%;
+
+position:relative;
+
+}
+
+section h2{
+
+text-align:center;
+
+font-size:42px;
+
+margin-bottom:50px;
+
+font-family:'Space Grotesk',sans-serif;
+
+}
+
+section h2::after{
+
+content:"";
+
+display:block;
+
+width:90px;
+
+height:4px;
+
+margin:16px auto;
+
+background:linear-gradient(90deg,#4ea3ff,#8fd6ff);
+
+border-radius:20px;
+
+}
+
+/* ==========================================
+   GLASS CARD
+========================================== */
+
+.glass-card{
+
+background:rgba(255,255,255,.07);
+
+border:1px solid rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+padding:35px;
+
+border-radius:22px;
+
+max-width:950px;
+
+margin:auto;
+
+box-shadow:0 20px 50px rgba(0,0,0,.35);
+
+transition:.35s;
+
+}
+
+.glass-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 25px 55px rgba(79,163,255,.25);
+
+}
+
+.glass-card p{
+
+line-height:1.9;
+
+font-size:18px;
+
+color:#d8dde6;
+
+}
+
+/* ==========================================
+   SKILLS
+========================================== */
+
+.skills-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+gap:28px;
+
+margin-top:35px;
+
+}
+
+.skill-card{
+
+background:rgba(255,255,255,.06);
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:20px;
+
+padding:35px 20px;
+
+text-align:center;
+
+transition:.35s;
+
+backdrop-filter:blur(18px);
+
+cursor:pointer;
+
+}
+
+.skill-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 20px 45px rgba(79,163,255,.35);
+
+}
+
+.skill-card i{
+
+font-size:48px;
+
+margin-bottom:18px;
+
+color:#58b5ff;
+
+}
+
+.skill-card h3{
+
+font-size:20px;
+
+}
+
+/* ==========================================
+   PROJECTS
+========================================== */
+
+.project-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:30px;
+
+}
+
+.project-card{
+
+padding:30px;
+
+background:rgba(255,255,255,.06);
+
+border-radius:22px;
+
+border:1px solid rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+transition:.35s;
+
+}
+
+.project-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 20px 50px rgba(79,163,255,.35);
+
+}
+
+.project-card h3{
+
+margin-bottom:15px;
+
+font-size:24px;
+
+color:#6dbdff;
+
+}
+
+.project-card p{
+
+line-height:1.8;
+
+color:#d7dce5;
+
+}
+
+/* ==========================================
+   CERTIFICATES
+========================================== */
+
+.certificate-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+gap:25px;
+
+}
+
+.certificate-card{
+
+padding:28px;
+
+text-align:center;
+
+background:rgba(255,255,255,.06);
+
+border-radius:20px;
+
+border:1px solid rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+transition:.35s;
+
+}
+
+.certificate-card:hover{
+
+transform:scale(1.05);
+
+box-shadow:0 20px 50px rgba(79,163,255,.35);
+
+}
+
+.certificate-card h3{
+
+font-size:20px;
+
+}
+
+/* ==========================================
+   CONTACT
+========================================== */
+
+#contact p{
+
+margin:16px 0;
+
+font-size:18px;
+
+}
+
+#contact a{
+
+color:#7ecbff;
+
+text-decoration:none;
+
+}
+
+#contact i{
+
+margin-right:10px;
+
+color:#4ea3ff;
+
+}
 
 
