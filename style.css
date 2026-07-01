@@ -73,15 +73,17 @@ background:rgba(96,165,250,.18);
 color:#60a5fa;
 }
 .profile{
-width:180px;
-height:180px;
-border-radius:50%;
-object-fit:cover;
-border:4px solid #2563eb;
-margin-bottom:20px;
-box-shadow:0 0 20px;
-rgba(37,99,235,0.5);
-animation:float 3s ease-in-out infinite;
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #2563eb;
+    margin-bottom:20px;
+    box-shadow:0 0 20px rgba(37,99,235,0.5);
+    animation:float 3s ease-in-out infinite;
+
+    position: relative;
+    z-index: 50;
 }
 .hero h1{font-size:3rem}
 .btn{
@@ -227,13 +229,13 @@ transform:translate(-120px,-100px);
 
 .lamp-container{
     position:absolute;
-    top:-120px;
+    top:-60px;
     left:42%;
     transform:translateX(-50%);
     display:flex;
     flex-direction:column;
     align-items:center;
-    z-index:2;
+    z-index:100;
 }
 
 .wire{
