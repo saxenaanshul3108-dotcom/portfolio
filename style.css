@@ -173,30 +173,27 @@ h2{
     margin-bottom:25px;
     font-size:2rem;
 }
+
+
+
 .hero h1{
-font-size:3rem;
-font-family:Georgia, serif;
-letter-spacing:2px;
+    font-family:'Space Grotesk',sans-serif;
+    font-size:3.6rem;
+    font-weight:800;
+    letter-spacing:1px;
+    background:linear-gradient(45deg,#ffffff,#60a5fa,#2563eb);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    margin-bottom:10px;
 }
 
 .hero h2{
-font-size:1.3rem;
-font-family:'Trebuchet MS',sans-serif;
-color:#60a5fa;
-}
-.hero h1{
-font-family:'Poppins',sans-serif;
-font-size:2.8rem;
-font-weight:700;
-}
-
-.hero h2{
-font-family:'Poppins',sans-serif;
-font-size:1.5rem;
-font-weight:500;
-color:#7ab6ff;
-margin-top:15px;
-letter-spacing:1px;
+    font-family:'Poppins',sans-serif;
+    font-size:1.45rem;
+    font-weight:500;
+    color:#8ec5ff;
+    margin-top:10px;
+    letter-spacing:1px;
 }
 @keyframes bgAnimation{
 0%{
