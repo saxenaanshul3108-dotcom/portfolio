@@ -23,6 +23,21 @@ animation:moveGlow 12s ease-in-out infinite alternate;
 pointer-events:none;
 z-index:-1;
 }
+body::after{
+content:"";
+position:fixed;
+bottom:-250px;
+right:-250px;
+width:550px;
+height:550px;
+background:#60a5fa;
+opacity:.15;
+filter:blur(150px);
+border-radius:50%;
+animation:moveGlow2 15s ease-in-out infinite alternate;
+pointer-events:none;
+z-index:-1;
+}
 nav{display:flex;justify-content:space-between;align-items:center;padding:15px 20px;background:rgba(18,26,51,0.85);position:sticky;top:0;backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,0.08)}
 .logo{font-size:22px;font-weight:bold}
 .menu-btn{display:none;font-size:28px;background:none;border:none;color:white}
