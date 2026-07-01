@@ -1576,6 +1576,7 @@ LAMP CONTACT SECTION
   height:420px;
   display:flex;
   justify-content:center;
+  overflow:hidden;
 }
 
 .rig{
