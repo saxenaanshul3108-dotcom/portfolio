@@ -441,55 +441,56 @@ left:50%;
 
 transform:translateX(-50%);
 
-width:120px;
+width:130px;
 
-height:70px;
+height:75px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+filter:drop-shadow(0 0 18px rgba(255,255,180,.18));
 
 }
-
 .lamp-top{
 
 position:absolute;
 
-width:120px;
+width:130px;
 
-height:40px;
+height:42px;
 
-background:
-linear-gradient(
+background:linear-gradient(
 180deg,
-#5a5a5a,
-#1d1d1d);
+#7b7b7b,
+#202020);
 
-border-radius:
-60px 60px 12px 12px;
+border-radius:70px 70px 15px 15px;
 
 box-shadow:
-0 0 20px rgba(255,255,255,.08);
+0 6px 15px rgba(0,0,0,.45);
 
 }
-
 .lamp-bottom{
 
 position:absolute;
 
 bottom:0;
 
-width:120px;
+width:130px;
 
 height:40px;
 
-background:
-linear-gradient(
+background:linear-gradient(
 180deg,
-#2b2b2b,
-#080808);
+#2f2f2f,
+#090909);
 
-border-radius:
-0 0 60px 60px;
+border-radius:0 0 70px 70px;
 
 }
-
 .chain{
 
 position:absolute;
