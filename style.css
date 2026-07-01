@@ -60,8 +60,14 @@ letter-spacing:1px;
 color:white;
 transition:.3s;
 }
-#menu a{color:white;text-decoration:none}
-.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px}
+#menu a{
+color:white;
+text-decoration:none;
+font-weight:500;
+padding:10px 18px;
+border-radius:10px;
+transition:.35s;
+}
 .profile{
 width:180px;
 height:180px;
