@@ -52,9 +52,14 @@ border-bottom:1px solid rgba(255,255,255,0.08);
 z-index:1000;
 transition:0.4s;
 }
-.logo{font-size:22px;font-weight:bold}
-.menu-btn{display:none;font-size:28px;background:none;border:none;color:white}
-#menu{display:flex;gap:20px;list-style:none}
+.logo{
+font-family:'Space Grotesk',sans-serif;
+font-size:30px;
+font-weight:700;
+letter-spacing:1px;
+color:white;
+transition:.3s;
+}
 #menu a{color:white;text-decoration:none}
 .hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px}
 .profile{
