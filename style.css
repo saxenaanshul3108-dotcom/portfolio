@@ -821,6 +821,44 @@ box-shadow:
 rgba(102,217,255,.25);
 
 }
+.resume-btn{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+padding:12px 28px;
+
+border-radius:40px;
+
+background:linear-gradient(
+90deg,
+#4fc3ff,
+#7c5cff);
+
+color:#fff;
+
+font-weight:600;
+
+text-decoration:none;
+
+transition:.35s ease;
+
+box-shadow:
+0 8px 20px rgba(79,195,255,.25);
+
+}
+
+.resume-btn:hover{
+
+transform:translateY(-3px);
+
+box-shadow:
+0 14px 30px rgba(79,195,255,.35);
+
+}
 
 .btn:hover{
 
