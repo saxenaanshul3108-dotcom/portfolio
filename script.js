@@ -452,6 +452,32 @@ if (lampSendBtn) {
   });
 }
 
+// Certificate lightbox
+const certLightbox = document.getElementById('certLightbox');
+const certFrame = document.getElementById('certFrame');
+const certClose = document.getElementById('certClose');
+const certOpenNewTab = document.getElementById('certOpenNewTab');
+const viewCertBtns = document.querySelectorAll('.view-cert-btn');
+
+viewCertBtns.forEach(btn => {
+  btn.addEventListener('click', function () {
+    const url = this.getAttribute('data-cert');
+    certFrame.src = url;
+    certOpenNewTab.href = url;
+    certLightbox.classList.add('open');
+  });
+});
+
+function closeCertLightbox() {
+  certLightbox.classList.remove('open');
+  certFrame.src = "";
+}
+
+certClose.addEventListener('click', closeCertLightbox);
+certLightbox.addEventListener('click', function (e) {
+  if (e.target === certLightbox) closeCertLightbox();
+});
+
 /*==========================================================
 END OF FILE
 ==========================================================*/
