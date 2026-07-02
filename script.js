@@ -422,7 +422,7 @@ if (lampSendBtn) {
       method: "POST",
       headers: { "Content-Type": "application/json", Accept: "application/json" },
       body: JSON.stringify({
-        access_key: "YOUR-ACCESS-KEY-HERE",
+        access_key: "790abe42-2eae-413e-aaf9-ab8e1b24b77b",
         name: name,
         email: email,
         message: message
