@@ -399,6 +399,59 @@ function toggleLamp(e){
 if (lampToggleBtn) lampToggleBtn.addEventListener('click', toggleLamp);
 if (chainToggleBtn) chainToggleBtn.addEventListener('click', toggleLamp);
 
+
+// Lamp panel message sending
+const lampSendBtn = document.getElementById('lampSendBtn');
+if (lampSendBtn) {
+  lampSendBtn.addEventListener('click', function () {
+    const name = document.getElementById('lampName').value.trim();
+    const email = document.getElementById('lampEmail').value.trim();
+    const message = document.getElementById('lampMessage').value.trim();
+    const statusEl = document.getElementById('lampFormStatus');
+
+    if (!email || !message) {
+      statusEl.textContent = "Please fill in email and message.";
+      statusEl.style.color = "red";
+      return;
+    }
+
+    lampSendBtn.disabled = true;
+    lampSendBtn.textContent = "Sending...";
+
+    fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify({
+        access_key: "YOUR-ACCESS-KEY-HERE",
+        name: name,
+        email: email,
+        message: message
+      })
+    })
+      .then(res => res.json())
+      .then(data => {
+        if (data.success) {
+          statusEl.textContent = "✅ Message sent!";
+          statusEl.style.color = "lightgreen";
+          document.getElementById('lampName').value = "";
+          document.getElementById('lampEmail').value = "";
+          document.getElementById('lampMessage').value = "";
+        } else {
+          statusEl.textContent = "❌ Something went wrong.";
+          statusEl.style.color = "red";
+        }
+      })
+      .catch(() => {
+        statusEl.textContent = "❌ Network error.";
+        statusEl.style.color = "red";
+      })
+      .finally(() => {
+        lampSendBtn.disabled = false;
+        lampSendBtn.textContent = "Send message";
+      });
+  });
+}
+
 /*==========================================================
 END OF FILE
 ==========================================================*/
